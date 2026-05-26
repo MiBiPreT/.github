@@ -47,6 +47,10 @@ workspace "MibiPreT" "Micro Bioremediation Toolbox" {
                     description "Three dimensional semi-analytical transport model"
                     technology "Python"
                 }
+                bsc = component Bioscreen {
+                    description "Three dimensional semi-analytical transport model"
+                    technology "Python"
+                }
                 mf = component ModFlow {
                     description "Interface to Three dimensional numerical transport model MODFLOW"
                     technology "Python"
@@ -64,7 +68,7 @@ workspace "MibiPreT" "Micro Bioremediation Toolbox" {
             }
             
             rdb = container "MIBIREM Reaction Database" {
-                description "Storage for chemical and biological reactions and their rates relevant to bioremediation"
+                description "Storage for chemical and biological reactions and their rates"
                 tags "Database"
                 technology ""
             }
